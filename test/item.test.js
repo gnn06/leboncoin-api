@@ -1,6 +1,7 @@
 const cheerio = require('cheerio');
 const should = require('should');
 
+const filter = require('../lib/filters.js');
 const search = require("../lib/search.js");
 const item = require("../lib/item.js");
 
@@ -56,6 +57,26 @@ describe('Item', function() {
                     data.should.have.property('id');
                     console.log(data);
                     done()
+                }, function (err) {
+                    done(err);
+                });
+            }, function (err) {
+                done(err);
+            });
+        });
+
+        it('Get the details of a motobike', function(done) {
+            new search.Search()
+            .setCategory("motos")
+            .setFilter(filter.FILTERS.PARTICULIER)
+            .run().then(function (data) {
+                data.results[0].getDetails().then(function (data) {
+                    data.should.have.property('moto');
+                    data.moto.should.have.property('annee');
+                    data.moto.should.have.property('kilometrage');
+                    data.moto.should.have.property('cylindree');
+                    console.log(data ? data.moto : "nothing");
+                    done();
                 }, function (err) {
                     done(err);
                 });

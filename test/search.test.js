@@ -75,6 +75,15 @@ describe('Search', function() {
             s.getUrl().should.equal("https://www.leboncoin.fr/recherche/?page=1&owner_type=a&ps=1000&pe=20000");
             done();
         });
+
+        it('check departement', function(done) {
+            var s = new search.Search();
+            s.setRegion("provence_alpes_cote_d_azur");
+            s.setDepartment("alpes_maritimes");
+            s.getUrl().should.equal("https://www.leboncoin.fr/recherche/?page=1&owner_type=a&region=21&departement=6");
+
+            done();
+        });
     });
 
     describe('Parsers', function() {
@@ -105,7 +114,7 @@ describe('Search', function() {
 
             results[0].should.have.property('date');
             results[0].date.getDate().should.be.exactly(28);
-            results[0].date.getMonth().should.be.exactly(1); // February
+            results[0].date.getMonth().should.be.exactly(2); // February
             results[0].date.getHours().should.be.exactly(23);
             results[0].date.getMinutes().should.be.exactly(29);
 
