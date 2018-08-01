@@ -66,23 +66,19 @@ describe('Item', function() {
         });
 
         it('Get the details of a motobike', function(done) {
-            new search.Search()
-            .setCategory("motos")
-            .setFilter(filter.FILTERS.PARTICULIER)
-            .run().then(function (data) {
-                data.results[0].getDetails().then(function (data) {
-                    data.should.have.property('moto');
-                    data.moto.should.have.property('annee');
-                    data.moto.should.have.property('kilometrage');
-                    data.moto.should.have.property('cylindree');
-                    console.log(data ? data.moto : "nothing");
-                    done();
-                }, function (err) {
-                    done(err);
-                });
-            }, function (err) {
-                done(err);
-            });
+            var input = new item.Item();
+            input.details = {
+                attributes : [
+                    { key : "regdate", value : "2018"},
+                    { key : "mileage",  value : "40000"},
+                    { key : "cubic_capacity",  value : "600"}
+                ]
+            };
+            var output = input.getBike();
+            output.should.have.property('moto');
+            output.moto.should.have.property('annee').and.be.exactly('2018');
+            output.moto.should.have.property('kilometrage').and.be.exactly('40000');
+            output.moto.should.have.property('cylindree').and.be.exactly('600');
         });
     });
 
