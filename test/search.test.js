@@ -100,6 +100,20 @@ describe('Search', function() {
             
             done();
         });
+
+        it('check departement', function(done) {
+            var s = new search.Search({
+                category: 2,
+                region : "provence_alpes_cote_d_azur",
+                department : "alpes_maritimes"
+            });
+            bodyParams = JSON.stringify(s.getBodyParams());
+            expectedBodyParams = "{\"limit\":35,\"filters\":{\"category\":{\"id\":2},\"enums\":{\"ad_type\":[\"offer\"]},\"location\":{\"region\":\"21\",\"department\":\"6\"},\"keywords\":{},\"ranges\":{}},\"offset\":0}";
+            bodyParams.should.equal(expectedBodyParams);
+            //s.getUrl().should.equal("https://www.leboncoin.fr/recherche/?page=1&owner_type=a&region=21&departement=6");
+
+            done();
+        });
     });
 
     // describe('Parsers', function() {

@@ -1,6 +1,7 @@
 const cheerio = require('cheerio');
 const should = require('should');
 
+const filter = require('../lib/filters.js');
 const search = require("../lib/search.js");
 const item = require("../lib/item.js");
 
@@ -63,6 +64,22 @@ describe('Item', function() {
             }, function (err) {
                 done(err);
             });
+        });
+
+        it('Get the details of a motobike', function(done) {
+            var input = new item.Item();
+            input.details = {
+                attributes : [
+                    { key : "regdate", value : "2018"},
+                    { key : "mileage",  value : "40000"},
+                    { key : "cubic_capacity",  value : "600"}
+                ]
+            };
+            var output = input.getBike();
+            output.should.have.property('moto');
+            output.moto.should.have.property('annee').and.be.exactly('2018');
+            output.moto.should.have.property('kilometrage').and.be.exactly('40000');
+            output.moto.should.have.property('cylindree').and.be.exactly('600');
         });
     });
      */
