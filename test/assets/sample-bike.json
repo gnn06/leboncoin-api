@@ -1,84 +1,325 @@
-Item {
-  title: 'Triumph Tiger 800 XRX',
-  description: 'Vends Tiger XRX de 2016, 6000km au compteur.\n\nMoto en état irréprochable, dort dans un garage.\nPneus pilot road 4 à 20-30% d,usure. \n\nOptions sur la moto: porte valises avec deux valises amovibles et poignées chauffantes.\n\nMe contacter pour plus d,infos.',
-  category: 'Motos',
-  link: 'https://www.leboncoin.fr/vi/1467820446.htm',
-  images: 
-   [ 'https://img0.leboncoin.fr/ad-large/6367d476564c43cc0ed7c420edd91e3df57f02cd.jpg',
-     'https://img4.leboncoin.fr/ad-large/8938eaab43acefec1047119f6ef476a14e8b6011.jpg',
-     'https://img7.leboncoin.fr/ad-large/aa0af55f3115ea565f68496cc25a08a57e3ca47b.jpg' ],
-  location: 
-   { region_id: '21',
-     region_name: 'Provence-Alpes-Côte d\'Azur',
-     department_id: '6',
-     department_name: 'Alpes-Maritimes',
-     city_label: 'Nice 06000',
-     city: 'Nice',
-     zipcode: '06000',
-     lat: 43.71769,
-     lng: 7.23084,
-     source: 'city',
-     provider: 'lbc',
-     is_shape: true },
-  urgent: false,
-  price: 9700,
-  date: '2018-07-26 19:10:09',
-  owner: 
-   { store_id: '15163395',
-     user_id: '5054f083-b822-40f4-8dd1-697ff809fbc1',
-     type: 'private',
-     name: 'Anthony',
-     no_salesmen: true },
-  id: 1467820446,
-  seller: 'Anthony',
-  details: 
-   { isFetching: false,
-     list_id: 1467820446,
-     first_publication_date: '2018-07-26 19:10:09',
-     expiration_date: '2018-09-24 19:10:09',
-     index_date: '2018-08-02 19:10:08',
-     category_id: '3',
-     category_name: 'Motos',
-     subject: 'Triumph Tiger 800 XRX',
-     body: 'Vends Tiger XRX de 2016, 6000km au compteur.\n\nMoto en état irréprochable, dort dans un garage.\nPneus pilot road 4 à 20-30% d,usure. \n\nOptions sur la moto: porte valises avec deux valises amovibles et poignées chauffantes.\n\nMe contacter pour plus d,infos.',
-     ad_type: 'offer',
-     url: 'https://www.leboncoin.fr/vi/1467820446.htm',
-     price: [ 9700 ],
-     price_calendar: null,
-     images: 
-      { thumb_url: 'https://img0.leboncoin.fr/ad-thumb/6367d476564c43cc0ed7c420edd91e3df57f02cd.jpg',
-        small_url: 'https://img0.leboncoin.fr/ad-small/6367d476564c43cc0ed7c420edd91e3df57f02cd.jpg',
-        nb_images: 3,
-        urls: [Array],
-        urls_thumb: [Array],
-        urls_large: [Array] },
-     attributes: [ [Object], [Object], [Object] ],
-     location: 
-      { region_id: '21',
-        region_name: 'Provence-Alpes-Côte d\'Azur',
-        department_id: '6',
-        department_name: 'Alpes-Maritimes',
-        city_label: 'Nice 06000',
-        city: 'Nice',
-        zipcode: '06000',
-        lat: 43.71769,
-        lng: 7.23084,
-        source: 'city',
-        provider: 'lbc',
-        is_shape: true,
-        polygon: [Array] },
-     owner: 
-      { store_id: '15163395',
-        user_id: '5054f083-b822-40f4-8dd1-697ff809fbc1',
-        type: 'private',
-        name: 'Anthony',
-        no_salesmen: true },
-     options: 
-      { has_option: true,
-        booster: false,
-        photosup: false,
-        urgent: false,
-        gallery: false,
-        sub_toplist: true },
-     has_phone: true } }
-https://www.leboncoin.fr/vi/1467820446.htm,Triumph Tiger 800 XRX,9700,2016,6000,800
+{
+    "routing": {
+        "locationBeforeTransitions": {
+            "pathname": "/motos/1360187443.htm/",
+            "search": "",
+            "hash": "",
+            "action": "POP",
+            "key": null,
+            "query": {}
+        }
+    },
+    "account": {
+        "isFetching": false
+    },
+    "adSearch": {
+        "isFetching": false,
+        "selectedTabName": "all",
+        "selectedPage": 1,
+        "sortBy": "time",
+        "sortOrder": "desc"
+    },
+    "adview": {
+        "isFetching": false,
+        "list_id": 1360187443,
+        "first_publication_date": "2017-12-28 08:20:13",
+        "index_date": "2018-07-16 08:20:13",
+        "category_id": "3",
+        "category_name": "Motos",
+        "subject": "Yamaha XJ6 600 cm3",
+        "body": "Yamaha XJ6 600 cm3 Roadster 2016, gris, mise en circulation le 30/12/2016.\n\nAutres équipements et informations :\nVÉHICULE DE DIRECTION COMME NEUF, VÉHICULE BRIDE POUR LES PERMIS A2, AUCUNS CONSOMMABLES A PRÉVOIR, PROCHAIN ENTRETIEN A 6000KMS, POSSIBILITÉ DE FINANCEMENT AVEC OU SANS APPORT DE 18 A 60 MOIS, POUR PLUS DE PHOTOS OU DE RENSEIGNEMENTS\n\nRéférence annonce : 1898572\n\nNOUS CONTACTER :\n0497066666",
+        "ad_type": "offer",
+        "url": "https://www.leboncoin.fr/vi/1360187443.htm",
+        "price": [
+            6290
+        ],
+        "price_calendar": null,
+        "images": {
+            "thumb_url": "https://img5.leboncoin.fr/ad-thumb/460a89b1a9d9442751be7ca30ffd8b339172e0f8.jpg",
+            "small_url": "https://img5.leboncoin.fr/ad-small/460a89b1a9d9442751be7ca30ffd8b339172e0f8.jpg",
+            "nb_images": 4,
+            "urls": [
+                "https://img5.leboncoin.fr/ad-image/460a89b1a9d9442751be7ca30ffd8b339172e0f8.jpg",
+                "https://img2.leboncoin.fr/ad-image/9e13f4db5b5368f0b38109479d19a3c3f1c00123.jpg",
+                "https://img4.leboncoin.fr/ad-image/368ac7f3b9faf2266d4b07c501792441eda37340.jpg",
+                "https://img1.leboncoin.fr/ad-image/326932f8e20e37a1019409eabbe6d5102edbcd1d.jpg"
+            ],
+            "urls_thumb": [
+                "https://img5.leboncoin.fr/ad-thumb/460a89b1a9d9442751be7ca30ffd8b339172e0f8.jpg",
+                "https://img2.leboncoin.fr/ad-thumb/9e13f4db5b5368f0b38109479d19a3c3f1c00123.jpg",
+                "https://img4.leboncoin.fr/ad-thumb/368ac7f3b9faf2266d4b07c501792441eda37340.jpg",
+                "https://img1.leboncoin.fr/ad-thumb/326932f8e20e37a1019409eabbe6d5102edbcd1d.jpg"
+            ],
+            "urls_large": [
+                "https://img5.leboncoin.fr/ad-large/460a89b1a9d9442751be7ca30ffd8b339172e0f8.jpg",
+                "https://img2.leboncoin.fr/ad-large/9e13f4db5b5368f0b38109479d19a3c3f1c00123.jpg",
+                "https://img4.leboncoin.fr/ad-large/368ac7f3b9faf2266d4b07c501792441eda37340.jpg",
+                "https://img1.leboncoin.fr/ad-large/326932f8e20e37a1019409eabbe6d5102edbcd1d.jpg"
+            ]
+        },
+        "attributes": [
+            {
+                "key": "regdate",
+                "value": "2016",
+                "key_label": "Année-modèle",
+                "value_label": "2016",
+                "generic": true
+            },
+            {
+                "key": "mileage",
+                "value": "2500",
+                "key_label": "Kilométrage",
+                "value_label": "2500 km",
+                "generic": true
+            },
+            {
+                "key": "cubic_capacity",
+                "value": "600",
+                "key_label": "Cylindrée",
+                "value_label": "600 cm³",
+                "generic": true
+            },
+            {
+                "key": "custom_ref",
+                "value": "1898572",
+                "key_label": "Référence",
+                "value_label": "1898572",
+                "generic": true
+            }
+        ],
+        "location": {
+            "region_id": "21",
+            "region_name": "Provence-Alpes-Côte d'Azur",
+            "department_id": "6",
+            "department_name": "Alpes-Maritimes",
+            "city_label": "Cannes 06400",
+            "city": "Cannes",
+            "zipcode": "06400",
+            "lat": 43.55219,
+            "lng": 7.02169,
+            "source": "city",
+            "provider": "lbc",
+            "is_shape": true,
+            "polygon": []
+        },
+        "owner": {
+            "store_id": "3188920",
+            "user_id": "1d1f384f-a1e8-4586-86dd-de93036cd5b8",
+            "type": "pro",
+            "name": "JET 7 BIKE",
+            "siren": "383590957",
+            "no_salesmen": false
+        },
+        "options": {
+            "has_option": false,
+            "booster": false,
+            "photosup": false,
+            "urgent": false,
+            "gallery": false,
+            "sub_toplist": false
+        },
+        "has_phone": true
+    },
+    "app": {
+        "serverError": false,
+        "isFetchingData": true,
+        "regionId": "21"
+    },
+    "cart": {
+        "isFetching": false,
+        "items": []
+    },
+    "datalayer": {
+        "event_name": ""
+    },
+    "home": {
+        "isFetching": false
+    },
+    "lbcData": {
+        "regions": {
+            "isFetching": false
+        },
+        "departments": {
+            "isFetching": false
+        },
+        "categories": {
+            "isFetching": false
+        },
+        "searchParams": {
+            "isFetching": false
+        }
+    },
+    "p2pPayment": {
+        "isFetching": false,
+        "data": {},
+        "currentDealId": "",
+        "ad": null,
+        "sales": [],
+        "purchases": []
+    },
+    "payment": {
+        "isFetching": false
+    },
+    "performanceData": {
+        "tips": {
+            "no_contacts": [],
+            "no_views": [],
+            "olds": []
+        },
+        "summary": {},
+        "history": [
+            {}
+        ],
+        "categories": [
+            {
+                "subcategories": []
+            }
+        ],
+        "fetched": {
+            "history": false,
+            "categories": false,
+            "summary": false,
+            "tips": false
+        },
+        "categoryFiltering": null
+    },
+    "savedAd": {
+        "isFetching": false,
+        "ids": [],
+        "disabled": false,
+        "isFetchingData": false
+    },
+    "myAd": {
+        "adsCounts": {
+            "found": 0,
+            "selected": 0,
+            "online": 0
+        },
+        "allAdsSelected": "no",
+        "booster": {
+            "usage": 0,
+            "slots": 0,
+            "eligible": false
+        },
+        "data": {
+            "ads": [],
+            "total": 0
+        },
+        "error": {},
+        "isFetching": {
+            "ads": false,
+            "booster": false,
+            "kyc": false
+        },
+        "kyc": {},
+        "params": {
+            "context": "default",
+            "filters": {},
+            "limit": 5,
+            "offset": 0,
+            "sort_by": "date",
+            "sort_order": "desc"
+        }
+    },
+    "savedSearch": {
+        "list": {
+            "loading": {
+                "status": false
+            },
+            "adding": {
+                "status": false
+            },
+            "editing": {
+                "status": false
+            },
+            "deleting": {
+                "status": false
+            }
+        },
+        "adListPreview": {
+            "selectedPage": 1,
+            "sortBy": "time",
+            "sortOrder": "desc"
+        }
+    },
+    "ui": {
+        "lightbox": {
+            "isOpen": false,
+            "activeSlide": 0
+        },
+        "searchForm": {
+            "isOpen": false
+        },
+        "modal": {
+            "isOpen": false,
+            "type": "DEFAULT_MODAL",
+            "options": {}
+        },
+        "toastr": {
+            "isOpen": false
+        },
+        "geolocation": {
+            "isFetching": false,
+            "coords": null,
+            "error": null
+        },
+        "bodyClassNames": {
+            "noScroll": false,
+            "navBarOpen": false,
+            "adSkin": false,
+            "adSkinProgrammatic": false,
+            "noGutter": false,
+            "headerHidden": false
+        },
+        "bodyBackground": "",
+        "scrollbarWidth": 0
+    },
+    "stores": {
+        "byId": {
+            "3188920": {}
+        },
+        "error": false
+    },
+    "advertising": {
+        "cleanedAt": 0,
+        "habillage": {
+            "isAdProgrammatic": false,
+            "creativeId": "",
+            "targetURL": "",
+            "clickDelay": 0,
+            "noGutter": false,
+            "clickEnabled": true
+        }
+    },
+    "user": {
+        "isPro": false,
+        "isImport": false,
+        "isFetching": false,
+        "isAuthenticated": null,
+        "data": {
+            "personalData": {
+                "pseudo": "undefined",
+                "firstname": "undefined"
+            },
+            "amountCredits": "undefined"
+        },
+        "notifications": {
+            "messaging": null
+        }
+    },
+    "userPoc": {},
+    "webview": {
+        "isWebView": false
+    },
+    "form": {},
+    "router": {
+        "locationBeforeTransitions": {
+            "pathname": "/motos/1360187443.htm/",
+            "search": "",
+            "hash": "",
+            "action": "POP",
+            "key": null,
+            "query": {}
+        }
+    }
+}
