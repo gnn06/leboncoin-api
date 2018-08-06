@@ -46,7 +46,6 @@ describe('Item', function() {
         });
     });
 
-    /**
     describe('getDetails', function() {
         this.timeout(500000);
         it('Get the details of an item', function(done) {
@@ -76,13 +75,44 @@ describe('Item', function() {
                 ]
             };
             var output = input.getBike();
-            output.should.have.property('moto');
-            output.moto.should.have.property('annee').and.be.exactly('2018');
-            output.moto.should.have.property('kilometrage').and.be.exactly('40000');
-            output.moto.should.have.property('cylindree').and.be.exactly('600');
+            output.should.have.property('bike');
+            output.bike.should.have.property('regdate').and.be.exactly('2018');
+            output.bike.should.have.property('milage').and.be.exactly('40000');
+            output.bike.should.have.property('cubicCapacity').and.be.exactly('600');
+            done();
+        });
+
+        it('Get the details of a motobike with missing value', function(done) {
+            var input = new item.Item();
+                input.details = {
+                attributes : [
+                    { key : "mileage",  value : "40000"},
+                    { key : "cubic_capacity",  value : "600"}
+                ]
+            };
+            var output = input.getBike();
+            output.bike.should.have.property('regdate').and.be.exactly('');
+
+            input.details = {
+                attributes : [
+                    { key : "regdate", value : "2018"},
+                    { key : "cubic_capacity",  value : "600"}
+                ]
+            };
+            var output = input.getBike();
+            output.bike.should.have.property('milage').and.be.exactly('');
+
+            input.details = {
+                attributes : [
+                    { key : "regdate", value : "2018"},
+                    { key : "mileage",  value : "40000"}
+                ]
+            };
+            var output = input.getBike();
+            output.bike.should.have.property('cubicCapacity').and.be.exactly('');
+            done();
         });
     });
-     */
 
     /*describe('GetPhoneNumber', function() {
         this.timeout(500000);
