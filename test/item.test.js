@@ -77,8 +77,8 @@ describe('Item', function() {
             var output = input.getBike();
             output.should.have.property('bike');
             output.bike.should.have.property('regdate').and.be.exactly('2018');
-            output.bike.should.have.property('milage').and.be.exactly('40000');
-            output.bike.should.have.property('cubicCapacity').and.be.exactly('600');
+            output.bike.should.have.property('mileage').and.be.exactly('40000');
+            output.bike.should.have.property('cubic_capacity').and.be.exactly('600');
             done();
         });
 
@@ -100,7 +100,7 @@ describe('Item', function() {
                 ]
             };
             var output = input.getBike();
-            output.bike.should.have.property('milage').and.be.exactly('');
+            output.bike.should.have.property('mileage').and.be.exactly('');
 
             input.details = {
                 attributes : [
@@ -109,7 +109,7 @@ describe('Item', function() {
                 ]
             };
             var output = input.getBike();
-            output.bike.should.have.property('cubicCapacity').and.be.exactly('');
+            output.bike.should.have.property('cubic_capacity').and.be.exactly('');
             done();
         });
     });
@@ -131,4 +131,43 @@ describe('Item', function() {
             });
         });
     });*/
+});
+
+describe('assignMap', function() {
+    describe('assignMap', function() {
+        it('should assign bike property', function(done) {
+            var m = [ { key : "cubic_capacity", value : "600" }, { key : "mileage", value : "10000" }, { key : "regdate", value : "2012" } ];
+            var o = new item.Item();
+
+            o.assignBikeMapDefault(o, m);
+
+            o.should.have.property('cubic_capacity').and.equal('600');
+            o.should.have.property('mileage').and.equal('10000');
+            o.should.have.property('regdate').and.equal('2012');
+
+            done();
+        });
+
+        it('should assign only bike property', function(done) {
+            var m = [ { key : "not_a_bike_property", value : "valeur" } ];
+            var o = new item.Item();
+    
+            o.assignBikeMapDefault(o, m);
+    
+            o.should.not.have.property('not_a_bike_property');
+    
+            done();
+        });
+
+        it('should initialise missing bike property', function(done) {
+            var m = [ { key : "mileage", value : "10000" } ];
+            var o = new item.Item();
+    
+            o.assignBikeMapDefault(o, m);
+    
+            o.should.have.property('regdate').and.equal('');
+    
+            done();
+        });
+    });
 });

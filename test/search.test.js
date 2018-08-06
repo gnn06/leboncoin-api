@@ -110,7 +110,6 @@ describe('Search', function() {
             bodyParams = JSON.stringify(s.getBodyParams());
             expectedBodyParams = "{\"limit\":35,\"filters\":{\"category\":{\"id\":2},\"enums\":{\"ad_type\":[\"offer\"]},\"location\":{\"region\":\"21\",\"department\":\"6\"},\"keywords\":{},\"ranges\":{}},\"offset\":0}";
             bodyParams.should.equal(expectedBodyParams);
-            //s.getUrl().should.equal("https://www.leboncoin.fr/recherche/?page=1&owner_type=a&region=21&departement=6");
 
             done();
         });
@@ -123,6 +122,17 @@ describe('Search', function() {
             .setTitleOnly(true);
             bodyParams = JSON.stringify(s.getBodyParams());
             expectedBodyParams = "{\"limit\":35,\"filters\":{\"category\":{\"id\":2},\"enums\":{\"ad_type\":[\"offer\"]},\"location\":{},\"keywords\":{\"text\":\"tiger\",\"type\":\"subject\"},\"ranges\":{}},\"offset\":0}";
+            bodyParams.should.equal(expectedBodyParams);
+
+            done();
+        });
+
+        it('check bike criteria', function(done) {
+            var s = new search.Search({
+                category: 2
+            }).setMileAge({min : 20000, max : 30000});
+            bodyParams = JSON.stringify(s.getBodyParams());
+            expectedBodyParams = "{\"limit\":35,\"filters\":{\"category\":{\"id\":2},\"enums\":{\"ad_type\":[\"offer\"]},\"location\":{},\"keywords\":{},\"ranges\":{\"mileage\":{\"min\":20000,\"max\":30000}}},\"offset\":0}";
             bodyParams.should.equal(expectedBodyParams);
 
             done();
