@@ -2,6 +2,14 @@
 
 [![NPM](https://nodei.co/npm/leboncoin-api.png)](https://nodei.co/npm/leboncoin-api/)
 
+
+
+**/!\ leboncoin.fr is using DataDome to protect his API from library likes this one, it is library is not reliable in production anymore /!\\**
+
+## Documentation
+
+The documentation of the library is available here: https://durieux.me/projects/leboncoin.html.
+
 ## Install
 
 ```bash
@@ -25,6 +33,18 @@ var search = new leboncoin.Search()
     .setCategory("locations")
     .setRegion("ile_de_france")
     .setDepartment("yvelines")
+    .setLocation([
+                 {"zipcode": "78100"},
+                 {"zipcode": "78000"},
+                 ])
+//Search around you with latitude and longitude of your position and a radius in meters. Doing so you don't need to set Region, Department and Location
+//Exemple for 30km around Lyon
+//.setArea({"lat": 45.7679705, "lng": 4.8637901999999995, "radius": 30000})
+
+    //Add sort, two kind date or price and two ways asc or desc
+    //Exemple for a sort by date asc (older the first)
+    //.setSort({sort_by:"date",sort_order:"asc"})
+
     .addSearchExtra("price", {min: 1500, max: 2000}) // will add a range of price
     .addSearchExtra('furnished', ["1", "Non meublé"]); // will add enums for Meublé and Non meublé
 
